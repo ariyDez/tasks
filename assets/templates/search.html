@@ -1,0 +1,14 @@
+<div ng-controller="SearchCtrl">
+	<div class="input-group">
+		<input type="text" ng-model="query" class="form-control">
+		<span class="input-group-btn">
+			<button class="btn btn-primary" ng-click="search(query)">Search</button>
+		</span>
+		
+	</div>
+
+	<div>
+		<div><a href="{{result.href}}"><h3>{{result.title}}</h3></a></div>
+		<div class="link">{{result.link}}</div>
+	</div>
+</div>

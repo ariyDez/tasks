@@ -1,0 +1,22 @@
+<div ng-controller="FileCtrl">
+	<div class="col-md-6">
+		<h4>inputs.txt</h4>
+		<div ng-repeat="input in inputs">
+			{{input.value}}
+		</div>
+	</div>
+	<div class="col-md-6">
+		<h4>patterns.txt</h4>
+		<div ng-repeat="pattern in patterns">
+			{{pattern.value}}
+		</div>
+	</div>
+	<input type="radio" ng-model="mode.value" value="1">
+	<input type="radio" ng-model="mode.value" value="2">
+	<input type="radio" ng-model="mode.value" value="3">
+	<button class="btn btn-primary" ng-click="process()">Process</button>
+	Mode: {{mode.value}}
+	<div ng-repeat="result in results">
+		{{result.value}}
+	</div>
+</div>
