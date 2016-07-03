@@ -14,7 +14,6 @@ module.exports = {
 			if(err) console.log(err);
 			// get first result
 			var link = resp.links[0];
-			sails.log.error(link);
 			if(!link) return res.json({title: 'Ничего не найдено'})
 			// and return results
 			return res.json(link);
