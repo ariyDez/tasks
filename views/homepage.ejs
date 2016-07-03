@@ -1,24 +1,24 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="  false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">ZenSoft tasks</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li ng-class="{active:search}"><a href="/#/search">Search <span class="sr-only" ng-if="search">(current)</span></a></li>
+                <li ng-class="{active:file}"><a href="/#/pattern">Pattern<span class="sr-only" ng-if="file">(current)</span></a></li>
+              </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
 <div class="container">
     <div class="row">
-        <nav class="navbar navbar-inverse navbar-static-top">
-        	<div class="container-fluid">
-        		<div class="navbar-header">
-        		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        		        <span class="sr-only">Toggle navigation</span>
-        		        <span class="icon-bar"></span>
-        		        <span class="icon-bar"></span>
-        		        <span class="icon-bar"></span>
-        		      </button>
-        		      <a class="navbar-brand" href="#">ZenSoft tasks</a>
-        		</div>
-        		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        		      <ul class="nav navbar-nav">
-        		        <li class="active"><a href="/#/search">Search <span class="sr-only">(current)</span></a></li>
-        		        <li><a href="/#/pattern">Pattern</a></li>
-        		      </ul>
-        		    </div><!-- /.navbar-collapse -->
-        	</div>
-        </nav>
         <div class="col-md-3"></div>
         <div class="col-md-6">
         	<div ng-view></div>

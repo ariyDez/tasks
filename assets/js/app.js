@@ -18,6 +18,8 @@ tasks.config(['$routeProvider', function($routeProvider){
 
 // angular controller for task 1
 tasks.controller('SearchCtrl', ['$scope', '$rootScope', 'SearchService', function($scope, $rootScope, SearchService){
+	$rootScope.search = true;
+	$rootScope.file = false;
 	$scope.result = {};
 	$scope.search = function(query){
 		SearchService.getResult(query).then(function(response){
@@ -28,6 +30,8 @@ tasks.controller('SearchCtrl', ['$scope', '$rootScope', 'SearchService', functio
 
 // angular controller for task 2
 tasks.controller('FileCtrl', ['$scope', '$rootScope', 'FileService', function($scope, $rootScope, FileService){
+	$rootScope.file = true;
+	$rootScope.search = false;
 	$scope.results = [];
 	$scope.inputs = [];
 	$scope.patterns = [];
