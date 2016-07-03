@@ -16,6 +16,7 @@ tasks.config(['$routeProvider', function($routeProvider){
 	});
 }]);
 
+// angular controller for task 1
 tasks.controller('SearchCtrl', ['$scope', '$rootScope', 'SearchService', function($scope, $rootScope, SearchService){
 	$scope.result = {};
 	$scope.search = function(query){
@@ -25,6 +26,7 @@ tasks.controller('SearchCtrl', ['$scope', '$rootScope', 'SearchService', functio
 	}
 }]);
 
+// angular controller for task 2
 tasks.controller('FileCtrl', ['$scope', '$rootScope', 'FileService', function($scope, $rootScope, FileService){
 	$scope.results = [];
 	$scope.inputs = [];

@@ -1,3 +1,4 @@
+// Angular service for work with task 1
 tasks.service('SearchService', function($http, $q){
 	return {
 		'getResult' : function(query){
